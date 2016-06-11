@@ -26,25 +26,25 @@ public class ConfigManager {
                 ColorCodeUtil.translate(config.getStringList("plugin-messages.not-enough"))
         );
 
-        String economyMode = config.getString("economy.amount.mode");
+        String economyMode = config.getString("economy.mode");
         switch (economyMode) {
             case "exp":
-                economy = new Economy(true,
+                economy = new Economy(config.getBoolean("economy.enabled"),
                         "exp",
                         config.getInt("economy.amount.exp"));
                 break;
             case "level":
-                economy = new Economy(true,
+                economy = new Economy(config.getBoolean("economy.enabled"),
                         "level",
                         config.getInt("economy.amount.level"));
                 break;
             case "money":
-                economy = new Economy(true,
+                economy = new Economy(config.getBoolean("economy.enabled"),
                         "money",
                         config.getInt("economy.amount.money"));
                 break;
             default:
-                plugin.getLogger().severe("Invalid config option for 'economy.amount.mode'! " +
+                plugin.getLogger().severe("Invalid config option for 'economy.mode'! " +
                         "You can only choose 'exp', 'level' or 'money'. " +
                         "Skipping usage of economy.");
                 economy = new Economy(false, "", 0);

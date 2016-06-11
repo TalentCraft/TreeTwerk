@@ -1,0 +1,11 @@
+name: ${project.artifactId}
+main: net.terrocidepvp.treetwerk.TreeTwerk
+version: ${project.version}
+softdepend: [Vault]
+author: Terrobility
+description: ${project.description}
+website: https://terrocidepvp.net/
+permissions:
+    treetwerk.use:
+        description: "Allows you to twerk next to a sapling in order to grow it."
+        default: op

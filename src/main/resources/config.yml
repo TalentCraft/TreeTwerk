@@ -27,9 +27,9 @@ plugin-messages:
 
 economy:
     enabled: true
+    # Either "exp", "level" or "money". The money feature requires Vault!
+    mode: exp
     amount:
-        # Either "level", "exp" or "money". The money feature requires Vault!
-        mode: exp
         # It will take one of these depending on what you set above.
         exp: 250
         level: 5
