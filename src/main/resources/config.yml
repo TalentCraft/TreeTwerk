@@ -1,0 +1,36 @@
+# TreeTwerk by Terrobility
+# Skype: huntergplays and Spigot: Terrobility <3
+
+# x=x=x=x=x=x=x=x=x
+# | CONFIGURATION |
+# x=x=x=x=x=x=x=x=x
+# Please don't change the config version.
+config-version: 4
+
+# There is a 1 out of the number below chance for the sapling to grow.
+out-of: 5
+
+# Whether to show the bonemeal particle effect every time the player sneaks next to a sapling. SPIGOT ONLY!
+use-particle-effect: true
+
+# How many blocks from the player the sapling has to be in order to be affected. Try not to go over 10.
+radius:
+    x: 1
+    y: 0
+    z: 1
+
+plugin-messages:
+    success:
+    - "&aYou lost 250 exp for successfully growing the sapling by twerking!"
+    not-enough:
+    - "&cYou don't have enough exp to grow saplings by twerking!"
+
+economy:
+    enabled: true
+    amount:
+        # Either "level", "exp" or "money". The money feature requires Vault!
+        mode: exp
+        # It will take one of these depending on what you set above.
+        exp: 250
+        level: 5
+        money: 1000
