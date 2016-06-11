@@ -21,7 +21,7 @@ radius:
 
 plugin-messages:
     success:
-    - "&aYou lost 250 exp for successfully growing the sapling by twerking!"
+    - "&aYou lost 10 exp for successfully growing the sapling by twerking!"
     not-enough:
     - "&cYou don't have enough exp to grow saplings by twerking!"
 
@@ -29,8 +29,4 @@ economy:
     enabled: true
     # Either "exp", "level" or "money". The money feature requires Vault!
     mode: exp
-    amount:
-        # It will take one of these depending on what you set above.
-        exp: 250
-        level: 5
-        money: 1000
+    amount: 10

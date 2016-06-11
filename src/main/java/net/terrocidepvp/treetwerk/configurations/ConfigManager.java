@@ -31,17 +31,17 @@ public class ConfigManager {
             case "exp":
                 economy = new Economy(config.getBoolean("economy.enabled"),
                         "exp",
-                        config.getInt("economy.amount.exp"));
+                        config.getInt("economy.amount"));
                 break;
             case "level":
                 economy = new Economy(config.getBoolean("economy.enabled"),
                         "level",
-                        config.getInt("economy.amount.level"));
+                        config.getInt("economy.amount"));
                 break;
             case "money":
                 economy = new Economy(config.getBoolean("economy.enabled"),
                         "money",
-                        config.getInt("economy.amount.money"));
+                        config.getInt("economy.amount"));
                 break;
             default:
                 plugin.getLogger().severe("Invalid config option for 'economy.mode'! " +
